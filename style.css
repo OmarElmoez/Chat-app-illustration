@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+/* Start Global Rule */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img-resize {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.message {
+    line-height: 1.5;
+    padding: 8px;
+    font-size: .55em;
+    border-radius: 10px 10px 10px 5px;
+    -webkit-border-radius: 10px 10px 10px 5px;
+    -moz-border-radius: 10px 10px 10px 5px;
+    -ms-border-radius: 10px 10px 10px 5px;
+    -o-border-radius: 10px 10px 10px 5px;
+}
+/* End Global Rule */
+
+body {
+    font-family: "Rubik";
+    height: 100vh;
+    background-image: linear-gradient(to right, #fbda61, #ff5acd);
+}
+.container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.container .main-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    padding: 50px;
+    width: 550px;
+    z-index: 2;
+}
+.container .main-text h1 {
+    color: hsl(271, 36%, 24%);
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+.container .main-text p {
+    color: hsl(270, 7%, 64%);
+    line-height: 1.8;
+    font-size: 15px;
+    width: 95%;
+}
+.shape {
+    position: absolute;
+    left: -50px;
+    width: 35%;
+    height: 95%;
+    background-image: linear-gradient( to bottom,#C33FFE, #973AFF);
+    border-radius: 0 0 200px 200px;
+    -webkit-border-radius: 0 0 200px 200px;
+    -moz-border-radius: 0 0 200px 200px;
+    -ms-border-radius: 0 0 200px 200px;
+    -o-border-radius: 0 0 200px 200px;
+}
+.shape2 {
+    position: absolute;
+    right: -150px;
+    bottom: -50px;
+    width: 35%;
+    height: 95%;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 200px 200px 0 0;
+    -webkit-border-radius: 200px 200px 0 0;
+    -moz-border-radius: 200px 200px 0 0;
+    -ms-border-radius: 200px 200px 0 0;
+    -o-border-radius: 200px 200px 0 0;
+}
+.phone {
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    width: 250px;
+    height: 550px;
+    background-color: #F5F3F8;
+    border: 10px solid white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.phone .area {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px 5px 15px 15px;
+    -webkit-border-radius: 5px 5px 15px 15px;
+    -moz-border-radius: 5px 5px 15px 15px;
+    -ms-border-radius: 5px 5px 15px 15px;
+    -o-border-radius: 5px 5px 15px 15px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.phone .dataArea {
+    background-image: linear-gradient( to right,#8F38FB, #DF41FB);
+    height: 80px;
+    padding: 20px 10px;
+    border-radius: 30px 30px 5px 5px;
+    -webkit-border-radius: 30px 30px 5px 5px;
+    -moz-border-radius: 30px 30px 5px 5px;
+    -ms-border-radius: 30px 30px 5px 5px;
+    -o-border-radius: 30px 30px 5px 5px;
+}
+.dataArea .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.dataArea .content .icon {
+    color: white;
+    font-size: 10px;
+}
+.dataArea .content .prsData {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    margin-bottom: -10px;
+    margin-left: 2px;
+}
+.content .prsData .imgBX {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 5px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.prsData h6 {
+    color: hsl(276, 100%, 81%);
+}
+.prsData h6 span {
+    color: gray;
+    font-size: 7px;
+    opacity: .5;
+}
+.phone .left-chat {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.phone .left-chat p {
+    background-color: #EBE2F3;
+    color: hsl(276, 55%, 52%);
+    width: 140px;
+    margin-bottom: 5px;
+}
+.right-chat {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right-chat .dog-imgs {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.right-chat .dog-imgs .img {
+    width: 37px;
+    height: 37px;
+    background-color: #8F38FB;
+    margin-right: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.right-chat .message {
+    border-radius: 10px 10px 5px 10px;
+    -webkit-border-radius: 10px 10px 5px 10px;
+    -moz-border-radius: 10px 10px 5px 10px;
+    -ms-border-radius: 10px 10px 5px 10px;
+    -o-border-radius: 10px 10px 5px 10px;
+}
+.right-chat p {
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 8px gray;
+}
+.choice {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    background-image: linear-gradient( to right,#DA44FD,#8A37FF);
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    color: #FCDCFF;
+    border-radius: 10px 10px 10px 5px;
+    -webkit-border-radius: 10px 10px 10px 5px;
+    -moz-border-radius: 10px 10px 10px 5px;
+    -ms-border-radius: 10px 10px 10px 5px;
+    -o-border-radius: 10px 10px 10px 5px;
+}
+.left-chat .choice .hour {
+    margin-right: 48px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    box-shadow: 0 0 1px 0 whitesmoke;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.choice label {
+    font-size: .60em;
+    margin-left: 8px;
+    margin-right: 25px;
+    color: #EDEBF0;
+    font-weight: 450;
+}
+.phone .reply {
+    position: relative;
+}
+.phone .reply input[type="text"] {
+    margin-left: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    width: 210px;
+    border-radius: 20px;
+    font-size: .70em;
+    font-weight: 500;
+    color: hsl(206, 6%, 79%);
+}
+.phone .reply i {
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+    font-size: 20px;
+}

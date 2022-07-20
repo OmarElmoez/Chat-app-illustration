@@ -1,0 +1,44 @@
+@media (min-width: 375px) and (max-width: 1365px)  {
+    .container {
+        width: 100%;
+    }
+    .shape {
+        width: 70%;
+        height: 55%;
+        border-radius: 0 0 250px 0;
+        -webkit-border-radius: 0 0 250px 0;
+        -moz-border-radius: 0 0 250px 0;
+        -ms-border-radius: 0 0 250px 0;
+        -o-border-radius: 0 0 250px 0;
+    }
+    .phone {
+        top: 60px;
+        left: 26%;
+    }
+    .container .main-text {
+        text-align: center;
+        top: 65%;
+        left: 0;
+        width: 100%;
+    }
+    .container .main-text p {
+        line-height: 2;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+} 
+@media (min-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+    .shape {
+        left: -10%;
+    }
+    .phone {
+        top: 30%;
+        left: 20%;
+    }
+    .container .main-text {
+        top: 50%;
+}
+}
